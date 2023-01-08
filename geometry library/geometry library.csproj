@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>geometry_library</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>Danis</Authors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>MyPackage.Geometrylibrary</PackageId>
+  </PropertyGroup>
+
+</Project>
