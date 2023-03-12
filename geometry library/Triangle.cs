@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace geometry_library
 {
     public static class Triangle
     {
+        /// <summary>
+        /// returns Area of Triangle with 3 Sides
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        /// <returns> double</returns>
         public static double AreaTriangleWith3Sides(double a, double b, double c)
         {
            double s = (a + b + c) / 2;
@@ -17,6 +19,13 @@ namespace geometry_library
             return Math.Round(result, 2);
         }
 
+        /// <summary>
+        /// returns true if right angle triangle is right
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        /// <returns> bool</returns>
         public static bool IsRightAngleTriangle(double a, double b, double c)
         {
             double[] numbers = {a,b,c };
