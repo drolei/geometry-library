@@ -8,6 +8,7 @@
     <Authors>Danis</Authors>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>MyPackage.Geometrylibrary</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
