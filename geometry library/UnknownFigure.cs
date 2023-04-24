@@ -8,29 +8,16 @@ using System.Threading.Tasks;
 namespace geometry_library
 {
     public class UnknownFigure
-    {
-        private double a = 0;
-        private double b = 0;
-        private double c = 0;
-
-        public UnknownFigure(double a) {
-            this.a = a;
-        }
-        public UnknownFigure(double a, double b, double c) {
-            this.a = a;
-            this.b = b;
-            this.c = c;
-        }
+    {   
 
         /// <summary>
-        ///  returns Area of Triangle with 3 Sides or
-        ///  area of circle with radius
+        /// returns area of circle with radius
         /// </summary>
-        /// <returns> class Figure</returns>
-        public Figure CalculateSomeArea()
+        /// <param name="a"></param>
+        /// <returns></returns>
+        public Figure CalculateSomeArea(double a)
         {
-            if (b == 0 && c == 0)
-            {
+
                 var sum = Circle.AreaCircleWithRadius(a);
                 var result = new Figure()
                 {
@@ -39,17 +26,27 @@ namespace geometry_library
                 };
 
                 return result;
-            }
-            else {
+            
+        }
 
-                var sum = Triangle.AreaTriangleWith3Sides(a, b, c);
-                var result = new Figure()
-                {
-                    Sum = sum,
-                    FigureEnums = FigureEnum.Triangle
-                };
-                return result;
-            }
+        /// <summary>
+        /// returns Area of Triangle with 3 Sides
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        /// <returns></returns>
+        public Figure CalculateSomeArea(double a, double b, double c)
+        {
+
+            var sum = Triangle.AreaTriangleWith3Sides(a, b, c);
+                    var result = new Figure()
+                    {
+                        Sum = sum,
+                        FigureEnums = FigureEnum.Triangle
+                    };
+            return result;
+
         }
     }
 }

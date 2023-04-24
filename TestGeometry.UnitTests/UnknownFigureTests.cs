@@ -11,9 +11,9 @@ namespace TestGeometry.UnitTests
         [TestMethod]
         public void CalculateSomeArea_A3B6C7_ReturnsTriangleAnd8Dot94()
         {
-            var unknownFigure = new UnknownFigure(3, 6, 7);
+            var unknownFigure = new UnknownFigure();
 
-            var result = unknownFigure.CalculateSomeArea();
+            var result = unknownFigure.CalculateSomeArea(3, 6, 7);
 
             var expectedResult = new Figure()
             {
@@ -29,9 +29,9 @@ namespace TestGeometry.UnitTests
         [TestMethod]
         public void CalculateSomeArea_A10_ReturnCircleAnd314Dot16()
         {
-            var unknownFigure = new UnknownFigure(10);
+            var unknownFigure = new UnknownFigure();
 
-            var result = unknownFigure.CalculateSomeArea();
+            var result = unknownFigure.CalculateSomeArea(10);
 
             var expectedResult = new Figure()
             {
